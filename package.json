@@ -1,0 +1,15 @@
+{
+  "name": "Simple-Drawing-App",
+  "version": "1.0.0",
+  "description": "Simple app to draw stuff",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Hayes",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp": "^3.9.0"
+  }
+}
