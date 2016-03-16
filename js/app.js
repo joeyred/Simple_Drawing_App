@@ -16,11 +16,29 @@ $( '.controls li' ).click(function() {
 	color = $(this).css('background-color');
 });
 
+
+
 // When "New Color" is clicked
+$('#revealColorSelect').click(function(){
+	changeColor();
 	// Show color creation options
+	$('#colorSelect').toggle();
+});
+
+// Take values and update color preview
+function changeColor() {
+
+	var red = $('#red').val();
+	var green = $('#green').val();
+	var blue = $('#blue').val();
+
+	var newColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+
+	$('#newColor').css('background-color', newColor);
+}
 
 // When sliders are manipulated
-	// Take values and update color preview
+$('input[type=range]').on('input', changeColor);
 
 // When add color is selected
 	// append that color as an option to color choices
